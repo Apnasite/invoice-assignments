@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Invoice Page</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+   
+    <invoice-component
+        config='{
+              "containerClass": "invoice-container",
+              "backgroundClass": "invoice-background",
+              "rec1Class": "rect-top",
+              "rec2Class": "rect-bottom",
+              "taxDetailsClass": "tax-details",
+              "contentClass": "invoice-content",
+              "taxHeaderClass": "tax-header",
+              "customerDetailsClass":"customer-details",
+              "customerHeaderClass":"customer-header",
+              "billingDetailsClass":"billing-details",
+              "shippingDetailsClass":"shipping-details",
+              "tableClass": "content-table",
+              "tableHeaderClass": "content-header",
+              "totalClass":"total",
+              "amountDetailsClass":"amount-details",
+              "footerClass": "invoice-footer"
+
+            }'
+             data ='{
+                "taxDetails": {
+                  "invoiceNo": "Fucha367",
+                 "invoiceDate": "19/02/2025 13:55:01",
+                 "pONumber": "Single overline",
+                 "firmFoodLicNo": "Doughnut"
+               },
+               "customerDetails":{
+                "heading":"Rader",
+                "subHeading":"Legend title",
+                "state":"MAHARASHTRA",
+                "stateCode":"27",
+                "ph":"Double overline/Font Name",
+                "firmGstIn":"Drill Down"
+               },
+               "billingDetails":{
+                "heading":"Details of Receiver (Billed to)",
+                "subHeading":"Fuchsia",
+                "discription":"sundayNavy",
+                "state":"MHARASHTRA",
+                "stateCode":"27",
+                "beat":"Currency",
+                "gstInUniqueId":"Sunday",
+                "pcName":"",
+                "phone":"Mail Label /",
+                "salesManNo":"Font Strikeout"
+               },
+               "shippingDetails":{
+                "heading":"Details of Receiver (Shipped to)",
+                "subHeading":"Fuchsia",
+                "discription":"sunday",
+                "state":"MHARASHTRA",
+                "stateCode":"27",
+                "gstInUniqueId":"Sunday",
+                "foodLicNo":"Legend title"
+               },
+               "particulars": [
+                  { "SR":"1","Product Name":"Silver","HSN":"Friday","MRP":"110","Unit":"Cross","QTY":"17.26","FREE":"267.31","Rate":"194.85","Disc Amt":"554.06","Taxabble Amt":"14062.94","CGST":{"%":"83.53","Amount":"90.74"},"SGST":{"%":"83.53","Amount":"41.26"},"Net Amt":"14062.9"},
+                  { "SR":"2","Product Name":"Silver","HSN":"Friday","MRP":"110","Unit":"Cross","QTY":"17.26","FREE":"267.31","Rate":"194.85","Disc Amt":"554.06","Taxabble Amt":"14062.94","CGST":{"%":"83.53","Amount":"90.74"},"SGST":{"%":"83.53","Amount":"41.26"},"Net Amt":"14062.9"},
+                  {"SR":"3","Product Name":"Silver","HSN":"Friday","MRP":"110","Unit":"Cross","QTY":"17.26","FREE":"267.31","Rate":"194.85","Disc Amt":"554.06","Taxabble Amt":"14062.94","CGST":{"%":"83.53","Amount":"90.74"},"SGST":{"%":"83.53","Amount":"41.26"},"Net Amt":"14062.9"}            
+                ],
+                "total":{
+                  "totalValueRS":"One Hundred Eighty-Six And Sixty-two Paisa Only",
+                  "discription":"Certified that the particulars given above are true and correct and the amount indicated.",
+                  "subHeading":"Cheque Bounce Charges Rs.500/-",
+                  "fssaiNo":"Doughnut",
+                  "for":"Number",
+                  "sign":""
+                },
+                "amountDetails":{
+                  "taxableAmt":"-353.03.",
+                  "gstAmt":"136.84",
+                  "transport":282.72,
+                  "creditAmt":"37.10",
+                  "debitAmt":"83.39",
+                  "rounding":"165.87",
+                  "netAmount":"186.62"
+                }
+                
+              }'>
+    
+    </invoice-component>
+    
+
+  
+  
+    
+    
+    <script src="./script.js"></script>
+</body>
+</html>

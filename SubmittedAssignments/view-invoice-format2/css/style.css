@@ -1,0 +1,249 @@
+.invoice-container {
+    width: 210mm; 
+    height: 297mm;
+    border: 0.3mm solid #cd7e7e; 
+    padding: 9mm; 
+    background-color: hwb(0 100% 0%);
+    font-family: 'Arial', sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    box-shadow: 0mm 0mm 3mm rgba(22, 17, 17, 0.15); 
+    position: absolute;
+    left: 100mm;
+}
+.invoice-background {
+    position: absolute;
+}
+.rect-top {
+    border-bottom: 1px solid;
+    left: -9mm;
+    width: 228mm;
+    height: 51mm;
+    top: -25mm;
+    position: absolute;
+}
+.invoice-header {
+    color: #f3adad;
+    text-align: left;
+    padding: 8pt;
+    margin-right: mm;
+    margin-bottom: 4mm;
+    border-radius: 8mm;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: #dab42b;
+}
+
+.invoice-content {
+    margin-top: 15pt;
+    /* Converted from 20px */
+    position: absolute;
+    top: -1mm;
+    left: 115mm;
+
+
+}
+
+.invoice-details {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 5mm;
+    flex-wrap: wrap;
+    padding: 6pt;
+    background-color: #f8f8f8;
+    border-radius: 2mm;
+    box-shadow: 0mm 0mm 2mm rgba(0, 0, 0, 0.1);
+}
+
+.invoice-details div {
+    flex: 1;
+    margin: 0 4mm;
+}
+
+.tax-details {
+    top: -10mm;
+    left: 31mm;
+    position: absolute;
+    width: 67mm;
+    font-size: 4mm;
+
+}
+.tax-header{
+    font-weight: bold;
+    font-size: 5mm;
+}
+
+.customer-details{
+   position: absolute;
+    top: -10mm;
+    left: -116mm;
+    font-size: 4mm;
+    width: 188mm;
+
+}
+.customer-header{
+    font-weight: bold;
+    font-size: 5mm;
+}
+.customer-details .firmGstIn{
+   font-weight: bold;
+   font-size: 3mm;
+   position: relative;
+   left: 74mm;
+   top: -5mm;
+}
+.customer-details .stateCode{
+    position: absolute;
+    left: 48mm;
+    top: 19mm;
+
+}
+.billing-details{
+   position: absolute;
+    top: 23mm;
+    left: -116mm;
+    font-size: 3mm;
+    width: 188mm;
+}
+.billing-details .stateCode{
+    position: absolute;
+    left: 38mm;
+    top: 13mm;
+
+}
+.billing-details .beat{
+    position: absolute;
+    left: 76mm;
+    top: 13mm;
+
+}
+.billing-details .pcName{
+    position: absolute;
+    left: 76mm;
+    top: 18mm;
+
+}
+.billing-details .salesManNo{
+    position: absolute;
+    left: 76mm;
+    top: 23mm;
+
+}
+.billing-details .subHeading{
+    font-weight: bold;
+
+}
+.billing-details .gstInUniqueId{
+    font-weight: bold;
+}
+.shipping-details{
+   position: absolute;
+    top: 23mm;
+    left: 31mm;
+    font-size: 3mm;
+    width: 188mm;
+}
+.shipping-details .stateCode{
+    position: absolute;
+    left: 38mm;
+    top: 13.2mm;
+
+}
+.shipping-details .subHeading{
+    font-weight: bold;
+
+}
+
+.shipping-details .gstInUniqueId{
+    font-weight: bold;
+}
+.content-table {
+    font-size: 10px;
+    width: 138%;
+    border-collapse: collapse;
+    position: relative;
+    top: 52mm;
+    color: black;
+    left: -123.5mm;
+}
+
+.content-table th {
+    border: 1px solid #3a3333;
+    padding: 6pt;
+    position: relative;
+    color: rgb(15, 14, 14);
+}
+
+.content-table td {
+    border-right: 1px solid #3a3333;
+    border-left: 1px solid #3a3333;
+    padding: 6pt;
+    position: relative;
+}
+.content-header {
+    margin: 3.75pt 0;
+    position: absolute;
+    width: 10mm;
+    top: 10mm;
+    left: -20mm;
+}
+.rect-bottom {
+    border-bottom: 1.5pt solid;
+    left: -9mm;
+    width: 228mm;
+    height: 51mm;
+    top: 214mm;
+    position: absolute;
+}
+.total{
+   position: absolute;
+    top: 262mm;
+    left: -119mm;
+    font-size: 3mm;
+    width: 75mm;
+}
+.total .totalValueRS{
+   font-weight: bold;
+   font-size: 9px;
+}
+.total .subHeading{
+   font-weight: bold;
+}
+.total .fssaiNo{
+   font-weight: bold;
+}
+.total .for{
+   font-weight: bold;
+}
+.total .sign{
+    margin-top: 27px;
+}
+.amount-details{
+   position: absolute;
+    top: 262mm;
+    left: 39mm;
+    font-size: 3mm;
+    width: 88mm;
+}
+.amount-details .taxableAmt{
+   font-weight: bold;
+}
+.amount-details .transport{
+   font-weight: bold;
+}
+.amount-details .netAmount{
+   font-weight: bold;
+}
+
+.invoice-footer{
+  position: absolute;
+  top: 296mm;
+  left: -36mm;
+  font-size: 3mm;
+  width: 88mm;
+  font-weight: bold;
+}
+
+
