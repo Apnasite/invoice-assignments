@@ -33,12 +33,12 @@ class InvoiceComponent extends HTMLElement {
             state: 'MAHARASHTRA',
             stateCode: '27',
             ph: 'Double overline/Font Name',
-            firmGstIn:"Drill Down"
+            firmGstIn:'Drill Down'
         },
         billingDetails: {
             heading: 'Details of Receiver (Billed to)',
             subHeading: 'Fuchsia',
-            discription: 'sundayNavy',
+            description: 'sundayNavy',
             state: 'MHARASHTRA',
             stateCode: '27',
             beat: 'Currency',
@@ -50,7 +50,7 @@ class InvoiceComponent extends HTMLElement {
         shippingDetails: {
             heading: 'Details of Receiver (Shipped to)',
             subHeading: 'Fuchsia',
-            discription: 'sunday',
+            description: 'sunday',
             state: 'MHARASHTRA',
             stateCode: '27',
             gstInUniqueId: 'Sunday',
@@ -59,38 +59,38 @@ class InvoiceComponent extends HTMLElement {
         particulars: [
             {
                 SR: '1',
-                ProductName: 'Silver',
+                'Product Name': 'Silver',
                 HSN: 'Friday',
                 MRP: '110',
                 Unit: 'Cross',
                 QTY: '17.26',
                 FREE: '267.31',
                 Rate: '194.85',
-                DiscAmt: '554.06',
-                TaxabbleAmt: '14062.94',
+                'Disc Amt': '554.06',
+                'Taxabble Amt': '14062.94',
                 CGST: { '%': '83.53', Amount: '90.74' },
                 SGST: { '%': '83.53', Amount: '41.26' },
-                NetAmt: '14062.9'
+                'Net Amt': '14062.9'
             },
             {
                 SR: '2',
-                ProductName: 'Gold',
+                'Product Name': 'Gold',
                 HSN: 'Thursday',
                 MRP: '150',
                 Unit: 'Box',
                 QTY: '10.00',
                 FREE: '100.00',
                 Rate: '200.00',
-                DiscAmt: '300.00',
-                TaxabbleAmt: '17000.00',
+                'Disc Amt': '300.00',
+                'Taxabble Amt': '17000.00',
                 CGST: { '%': '9.00', Amount: '765.00' },
                 SGST: { '%': '9.00', Amount: '765.00' },
-                NetAmt: '18530.00'
+                'Net Amt': '18530.00'
             }
         ],
          total:{
             totalValueRS:'One Hundred Eighty-Six And Sixty-two Paisa Only',
-            discription:'Certified that the particulars given above are true and correct and the amount indicated.',
+            description:'Certified that the particulars given above are true and correct and the amount indicated.',
             subHeading:'Cheque Bounce Charges Rs.500/-',
             fssaiNo:'Doughnut',
             for:'Number'
@@ -217,7 +217,7 @@ class InvoiceComponent extends HTMLElement {
         const div = this.createElement("div", this.config.billingDetailsClass);
         div.appendChild(this.createElement("div", "heading", d.heading || ""));
         div.appendChild(this.createElement("div", "subHeading", d.subHeading || ""));
-        div.appendChild(this.createElement("div", "discription", d.discription || ""));
+        div.appendChild(this.createElement("div", "description", d.description || ""));
         div.appendChild(this.createElement("div", "state", `State: ${d.state || ""}`));
         div.appendChild(this.createElement("div", "stateCode", `State Code: ${d.stateCode || ""}`));
         div.appendChild(this.createElement("div", "beat", `BEAT: ${d.beat || ""}`));
@@ -233,7 +233,7 @@ class InvoiceComponent extends HTMLElement {
         const div = this.createElement("div", this.config.shippingDetailsClass);
         div.appendChild(this.createElement("div", "heading", d.heading || ""));
         div.appendChild(this.createElement("div", "subHeading", d.subHeading || ""));
-        div.appendChild(this.createElement("div", "discription", d.discription || ""));
+        div.appendChild(this.createElement("div", "description", d.description || ""));
         div.appendChild(this.createElement("div", "state", `State: ${d.state || ""}`));
         div.appendChild(this.createElement("div", "stateCode", `State Code: ${d.stateCode || ""}`));
         div.appendChild(this.createElement("div", "gstInUniqueId", `GSTIN/UNIQUE ID : ${d.gstInUniqueId || ""}`));
@@ -293,7 +293,7 @@ class InvoiceComponent extends HTMLElement {
         const d = this.data.total || {};
         const div = this.createElement("div", this.config.totalClass);
         div.appendChild(this.createElement("div", "totalValueRS", `Total Value RS: ${d.totalValueRS || ""}`));
-        div.appendChild(this.createElement("div", "discription", d.discription || ""));
+        div.appendChild(this.createElement("div", "description", d.description || ""));
         div.appendChild(this.createElement("div", "subHeading", d.subHeading || ""));
         div.appendChild(this.createElement("div", "fssaiNo", `FSSAI No: ${d.fssaiNo || ""}`));
         div.appendChild(this.createElement("div", "for", `For  ${d.for || ""}`));

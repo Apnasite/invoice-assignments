@@ -27,7 +27,6 @@
     color: #f3adad;
     text-align: left;
     padding: 8pt;
-    margin-right: mm;
     margin-bottom: 4mm;
     border-radius: 8mm;
     display: flex;
@@ -38,7 +37,6 @@
 
 .invoice-content {
     margin-top: 15pt;
-    /* Converted from 20px */
     position: absolute;
     top: -1mm;
     left: 115mm;
