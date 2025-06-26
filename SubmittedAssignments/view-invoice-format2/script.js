@@ -39,7 +39,7 @@ class InvoiceComponent extends HTMLElement {
             heading: 'Details of Receiver (Billed to)',
             subHeading: 'Fuchsia',
             description: 'sundayNavy',
-            state: 'MHARASHTRA',
+            state: 'MAHARASHTRA',
             stateCode: '27',
             beat: 'Currency',
             gstInUniqueId: 'Sunday',
@@ -51,7 +51,7 @@ class InvoiceComponent extends HTMLElement {
             heading: 'Details of Receiver (Shipped to)',
             subHeading: 'Fuchsia',
             description: 'sunday',
-            state: 'MHARASHTRA',
+            state: 'MAHARASHTRA',
             stateCode: '27',
             gstInUniqueId: 'Sunday',
             foodLicNo: 'Legend title'
@@ -67,7 +67,7 @@ class InvoiceComponent extends HTMLElement {
                 FREE: '267.31',
                 Rate: '194.85',
                 'Disc Amt': '554.06',
-                'Taxabble Amt': '14062.94',
+                'Taxable Amt': '14062.94',
                 CGST: { '%': '83.53', Amount: '90.74' },
                 SGST: { '%': '83.53', Amount: '41.26' },
                 'Net Amt': '14062.9'
@@ -82,7 +82,7 @@ class InvoiceComponent extends HTMLElement {
                 FREE: '100.00',
                 Rate: '200.00',
                 'Disc Amt': '300.00',
-                'Taxabble Amt': '17000.00',
+                'Taxable Amt': '17000.00',
                 CGST: { '%': '9.00', Amount: '765.00' },
                 SGST: { '%': '9.00', Amount: '765.00' },
                 'Net Amt': '18530.00'
