@@ -1,12 +1,9 @@
 .invoice-wrapper {
     width: 210mm;
-    /* Converted from 658px */
     padding: 15pt;
-    /* Converted from 20px */
     font-family: Arial, sans-serif;
     color: #333;
     border: 0.75pt solid black;
-    /* Converted from 1px */
     position: relative;
     overflow: hidden;
     height: 297mm;
@@ -59,7 +56,7 @@
 .rect-bottom-1 {
     width: 172mm;
     height: 6mm;
-    top: 234mm;
+    top: 242mm;
     left: -39mm;
     background: rgb(244, 154, 32);
     position: absolute;
@@ -74,7 +71,7 @@
     left: -9mm;
     width: 263mm;
     height: 56mm;
-    top: 230mm;
+    top: 250mm;
     background: rgb(7, 50, 93);
     transform: skewX(194deg);
     rotate: -4deg;
@@ -85,7 +82,7 @@
 .rect-bottom-3 {
     width: 176mm;
     height: 3mm;
-    top: 247mm;
+    top: 255mm;
     left: -95mm;
     background: rgb(10, 72, 117);
     position: absolute;
@@ -97,61 +94,49 @@
 }
 
 .invoice-content {
-    margin-top: 15pt;
-    /* Converted from 20px */
     position: absolute;
-    top: 7mm;
-
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
 }
 
 .invoice-title {
     text-align: center;
     font-size: 33pt;
     font-weight: bold;
-    z-index: 2;
-    top: -6mm;
-    left: 9mm;
+    left: 5mm;
     color: #2e2164d6;
-    position: absolute;
 }
 
 .invoice-header {
     display: flex;
     justify-content: space-between;
+    width: 100%;
+    font-size: 10pt;
+    flex-wrap: wrap;
+    position: relative;
 }
 
 .invoice-header .invoice-header-logo {
-    width: 20%;
-    left: 133mm;
-    top: -8mm;
     height: 25mm;
-    position: absolute;
-    /* border: 1mm solid black; */
+    margin-left: 5mm;
+    width: auto;
 }
 
 .invoice-details {
-    margin: 3.75pt 0;
-    /* Converted from 5px */
-    position: absolute;
-    width: -1mm;
     font-weight: bold;
-    top: 50mm;
-    left: 118mm;
-
+    margin-left: auto;
+    width: 40%;
 }
 
 .invoice-company-details {
-    position: absolute;
-    width: 51mm;
-    top: 56mm;
-    left: 0mm;
+    width: 100%;
+    margin-top: 5mm;
+    padding: 5mm;
 }
 
 .org-name {
-    position: absolute;
-    width: 73mm;
-    top: -8mm;
-    left: 0mm;
     font-size: 17pt;
     font-weight: bold;
 }
@@ -160,29 +145,23 @@
     width: 100%;
     border-collapse: collapse;
     position: relative;
-    top: 100mm;
 }
 
 .content-table th {
     border: 0.75pt solid #ddd;
-    /* Converted from 1px */
     padding: 6pt;
-    /* Converted from 8px */
     position: relative;
     background-color: rgb(253, 164, 0);
 }
 
 .content-table td {
     border: 0.75pt solid #ddd;
-    /* Converted from 1px */
     padding: 6pt;
-    /* Converted from 8px */
     position: relative;
 }
 
 .content-header {
     margin: 3.75pt 0;
-    /* Converted from 5px */
     position: absolute;
     width: 10mm;
     top: 10mm;
@@ -195,39 +174,24 @@
 }
 
 .total-amount {
-    top: 132mm;
-    position: absolute;
+    padding: 2mm 5mm;
 }
 
 .invoice-footer {
-    top: 212mm;
-    left: 11mm;
-    position: absolute;
-
+    padding: 0 5mm;
+    text-align: right;
 }
 
 .terms {
-    top: 247mm;
-    /* Converted from 20px */
-    position: absolute;
-    z-index: 4;
     color: white;
 }
 
 .bank-details {
-    top: 74mm;
-    left: 118mm;
-    position: absolute;
-
+    padding: 2mm 5mm;
 }
 
 .billing-address-section .details-header {
-    position: absolute;
-    color: black;
-    left: 0mm;
-    top: 147mm;
     font-weight: bold;
-
 }
 
 .party-billing-address {
@@ -238,12 +202,7 @@
 }
 
 .shipping-address-section .details-header {
-    position: absolute;
-    color: black;
-    left: 116mm;
-    top: 147mm;
     font-weight: bold;
-
 }
 
 .party-shipping-address {
@@ -254,13 +213,12 @@
 }
 
 .qr {
-    width: 25mm;
-    height: 25mm;
+    width: 40mm;
+    height: 40mm;
     position: absolute;
-    top: 225mm;
-    left: 146mm;
+    top: 45mm;
+    left: 165mm;
 }
-
 
 /* Form Style */
 form {
@@ -291,4 +249,15 @@ button {
 
 button:hover {
     background-color: #0056b3;
+}
+
+/* Customer */
+.customer-details-section {
+    width: 100%;
+    padding: 5mm;
+    display: flex;
+}
+
+.items {
+    padding: 0 5mm 2mm;
 }
