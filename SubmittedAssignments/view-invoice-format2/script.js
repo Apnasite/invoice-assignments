@@ -329,3 +329,8 @@ class InvoiceComponent extends HTMLElement {
 
 // Define the custom element
 customElements.define('invoice-component', InvoiceComponent);
+if (!window.customElements) window.customElements = [];
+window.customElements.push(
+    { component: "invoice-component", componentClass: InvoiceComponent }
+    
+);
