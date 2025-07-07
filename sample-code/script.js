@@ -101,6 +101,26 @@ class InvoiceComponent extends HTMLElement {
         "lastName": "Shetkar",
         "mobile": "+917517978898",
         "email": "vilasshetkar@gmail.com",
+        "billingAddress": {
+          "line1": "Hariom plaza",
+          "line2": "Kalewadi",
+          "location": "Pune H.O",
+          "area": "Pune City",
+          "city": "Pune",
+          "state": "MAHARASHTRA",
+          "country": "india",
+          "pincode": "411001"
+        },
+        "shippingAddress": {
+          "line1": "Hariom plaza",
+          "line2": "Kalewadi",
+          "location": "Pune H.O",
+          "area": "Pune City",
+          "city": "Pune",
+          "state": "MAHARASHTRA",
+          "country": "india",
+          "pincode": "411001"
+        },
         "address": {
           "line1": "Shop No. 8, Hari Om Plaza, Pune",
           "line2": "Kalewadi-Pimpri Main Road, Nadhe Nagar, Kalewadi",
@@ -308,7 +328,6 @@ class InvoiceComponent extends HTMLElement {
 
     wrapper.appendChild(content);
     this.appendChild(wrapper);
-    this.loadStyles();
   }
 
   renderBackground() {
@@ -334,14 +353,14 @@ class InvoiceComponent extends HTMLElement {
 
   renderLogo() {
     const logo = this.createElement("img", this.config.logoClass);
-    logo.src = this.data.logo || "";
+    logo.src = this.data.logo || "./img/logo.png";
     logo.alt = "Logo";
     return logo;
   }
 
   renderQR() {
     const qr = this.createElement("img", this.config.qrClass);
-    qr.src = this.data.qr || "";
+    qr.src = this.data.qr || "./img/qr.png";
     qr.alt = "QR";
     return qr;
   }
@@ -359,28 +378,41 @@ class InvoiceComponent extends HTMLElement {
   renderCompanyDetails() {
     const d = this.data;
     const div = this.createElement("div", "invoice-company-details");
-    div.appendChild(this.createElement("div", "org-name", d.companyName || ""));
-    div.appendChild(this.createElement("div", "org-gst-no", d.gstNo || ""));
+    div.appendChild(this.createElement("div", "org-name", d.Company.name || ""));
+    div.appendChild(this.createElement("div", "org-gst-no", d.Company.gst || ""));
     const addr = this.createElement("div", this.config.addressClass);
-    (d.companyAddress || []).forEach(line => addr.appendChild(this.createElement("div", null, line)));
+    (Object.values(d.Company.address) || []).filter(line => line !== '').forEach(line => addr.appendChild(this.createElement("div", null, line)));
     div.appendChild(addr);
     return div;
   }
 
   renderCustomerDetails() {
     const d = this.data;
-    const section = this.createElement("div", "customer-details-section");
-    section.appendChild(this.renderAddressSection("Billing Address:", d.customer?.billing));
-    section.appendChild(this.renderAddressSection("Shipping Address:", d.customer?.shipping));
+    const section = this.createElement("div", "customer-details-section flex-row gap-16");
+
+    // Billing Address Block
+    const billingBlock = this.createElement("span", "customer-address-block flex-1");
+    billingBlock.appendChild(this.renderAddressSection("Billing Address", d.Party?.billingAddress, d.Party?.name));
+    section.appendChild(billingBlock);
+
+    // Shipping Address Block
+    const shippingBlock = this.createElement("span", "customer-address-block flex-1");
+    shippingBlock.appendChild(this.renderAddressSection("Shipping Address", d.Party?.shippingAddress, d.Party?.name));
+    section.appendChild(shippingBlock);
+
     return section;
   }
 
-  renderAddressSection(title, party) {
+  renderAddressSection(title, addressObj, partyName) {
     const section = this.createElement("div", title.toLowerCase().replace(/\s/g, "-") + "-section");
     section.appendChild(this.createElement("div", this.config.detailsHeaderClass, title));
     const addrDiv = this.createElement("div", "details-cell party-address");
-    addrDiv.appendChild(this.createElement("div", "party-name", party?.name || ""));
-    (party?.address || []).forEach(line => addrDiv.appendChild(this.createElement("div", null, line)));
+    if (partyName) addrDiv.appendChild(this.createElement("div", "party-name", partyName));
+    if (addressObj && typeof addressObj === "object") {
+      Object.values(addressObj).forEach(line => {
+        if (line) addrDiv.appendChild(this.createElement("span", null, line));
+      });
+    }
     section.appendChild(addrDiv);
     return section;
   }
@@ -455,12 +487,6 @@ class InvoiceComponent extends HTMLElement {
     return this.createElement("td", null, text == null ? "" : String(text));
   }
 
-  loadStyles() {
-    const styleSheet = document.createElement("link");
-    styleSheet.rel = "stylesheet";
-    styleSheet.href = `./css/style.css`;
-    this.appendChild(styleSheet);
-  }
 }
 
 class InvoiceFormComponent extends HTMLElement {
@@ -694,3 +720,10 @@ class InvoiceFormComponent extends HTMLElement {
 customElements.define('invoice-form-component', InvoiceFormComponent);
 // Define the custom element
 customElements.define("invoice-component", InvoiceComponent);
+
+// Export for window
+if (!window.customElementsList) window.customElementsList = [];
+window.customElementsList.push(
+    { component: "invoice-form-component", componentClass: InvoiceFormComponent },
+    { component: "invoice-component", componentClass: InvoiceComponent }
+);
