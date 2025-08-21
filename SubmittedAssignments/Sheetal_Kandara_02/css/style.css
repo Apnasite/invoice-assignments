@@ -1,0 +1,395 @@
+.invoice-wrapper {
+    width: 210mm;
+    /* Converted from 658px */
+    padding: 15pt;
+    /* Converted from 20px */
+    font-family: Arial, sans-serif;
+    color: #333;
+    border: 0.75pt solid black;
+    /* Converted from 1px */
+    position: relative;
+    overflow: hidden;
+    height: 297mm;
+}
+
+.invoice-background {
+    position: absolute;
+}
+.rect-top-1 {
+   left: -7mm;
+    width: 204mm;
+    height: 24mm;
+    top: -17mm;
+    background: rgb(40 54 106);
+    position: absolute;
+}
+
+.rect-top-2 {
+   width: 119mm;
+    height: 16mm;
+    top: 4mm;
+    left: -19mm;
+    background: rgb(40 54 106);
+    position: absolute;
+    border-bottom-right-radius: 300mm;
+}
+
+.rect-top-3 {
+    width: 111mm;
+    height: 26mm;
+    top: 22mm;
+    left: -7mm;
+    background: rgb(40 54 106);
+    position: absolute;
+    z-index: 1;
+    border-top-right-radius: 300mm;
+}
+
+.rect-bottom-1 {
+    width: 81mm;
+    height: 17mm;
+    top: 262mm;
+    left: 132mm;
+    background: rgb(40 54 106);
+    position: absolute;
+    border-top-left-radius: 300mm;
+}
+
+.rect-bottom-2 {
+    left: -9mm;
+    width: 204mm;
+    height: 14mm;
+    top: 279mm;
+    background: rgb(40 54 106);
+    position: absolute;
+}
+
+.rect-bottom-3 {
+    width: 168mm;
+    height: 1.5mm;
+    top: 51mm;
+    left: 12mm;
+    background: rgb(40 54 106);
+    position: absolute;
+}
+.rect-bottom-4 {
+   width: 168mm;
+    height: 1.1mm;
+    top: 145mm;
+    left: 12mm;
+    background: rgb(40 54 106);
+    position: absolute;
+}
+.rect-bottom-dots {
+    width: 111px;
+    height: 64px;
+    background-color: rgb(40 54 106);
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='10' height='10'%3E%3Ccircle cx='5' cy='5' r='1' fill='white' /%3E%3C/svg%3E");
+    background-repeat: repeat;
+    top: 269mm;
+    position: absolute;
+    left: 155mm;
+}
+.rect-top-dots{
+    width: 111px;
+    height: 64px;
+    background-color: rgb(40 54 106);
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='10' height='10'%3E%3Ccircle cx='5' cy='5' r='1' fill='white' /%3E%3C/svg%3E");
+    background-repeat: repeat;
+    top: 0mm;
+    position: absolute;
+    left: 5mm;
+}
+.circle-left{
+  width: 33mm;
+  height: 28mm;
+  background-color: #ffffff;
+  border-radius: 50%;
+  position: absolute;
+  top: 53mm;
+  border: 12pt solid rgb(40 54 106);
+  left: -26mm;;
+}
+.circle-right{
+  width: 33mm;
+  height: 29mm;
+  background-color: #ffffff;
+  border-radius: 50%;
+  position: absolute;
+  top: 223mm;
+  border: 12pt solid rgb(40 54 106);
+  left: 180mm;
+}
+.circle-1{
+   width: 12mm;
+   height: 12mm;
+   background-color: rgb(40 54 106);
+   border-radius: 50%;
+   position: absolute;
+   top: 9mm;
+   left: 103mm;
+}
+
+.circle-2{
+  width: 9mm;
+  height: 9mm;
+  background-color: rgb(40 54 106);
+  border-radius: 50%;
+  position: absolute;
+  top: 64mm;
+  left: 182mm;
+}
+.circle-3{
+  width: 9mm;
+  height: 9mm;
+  background-color: rgb(40 54 106);
+  border-radius: 50%;
+  position: absolute;
+  top: 224mm;
+  left: -3mm;
+}
+.circle-4{
+  width: 12mm;
+  height: 12mm;
+  background-color: rgb(40 54 106);
+  border-radius: 50%;
+  position: absolute;
+  top: 265mm;
+  left: 119mm;
+}
+.invoice-content {
+    margin-top: 15pt;
+    /* Converted from 20px */
+    position: absolute;
+    top: 7mm;
+
+}
+
+.invoice-title {
+    text-align: center;
+    font-size: 33pt;
+    font-weight: bold;
+    z-index: 2;
+    top: 6mm;
+    left: 126mm;
+    color: #2e2164d6;
+    position: absolute;
+}
+
+.invoice-header {
+    display: flex;
+    justify-content: space-between;
+}
+
+.invoice-header .invoice-header-logo {
+    width: 20%;
+    left: 133mm;
+    top: -8mm;
+    height: 25mm;
+    position: absolute;
+}
+
+.invoice-details {
+    margin: -1.25pt 0;
+    position: absolute;
+    width: 78mm;
+    top: 18mm;
+    left: 115mm;
+
+}
+
+.invoice-company-details {
+    position: absolute;
+    width: 51mm;
+    top: 56mm;
+    left: 0mm;
+}
+
+.org-name {
+    position: absolute;
+    width: 73mm;
+    top: -8mm;
+    left: 0mm;
+    font-size: 17pt;
+    font-weight: bold;
+}
+
+.content-table {
+   width: 129%;
+    border-collapse: collapse;
+    position: relative;
+    top: 51mm;
+    color: black;
+    left: 13mm;
+}
+
+.content-table th {
+    /*border: 0.75pt solid #ddd;*/
+    /* Converted from 1px */
+    padding: 6pt;
+    /* Converted from 8px */
+    position: relative;
+    background-color: rgb(8, 25, 84);
+    color: white;
+}
+
+.content-table td {
+    /*border: 0.75pt solid #ddd;*/
+    /* Converted from 1px */
+    padding: 6pt;
+    /* Converted from 8px */
+    position: relative;
+}
+.content-table tr:nth-child(even) {
+    background-color:#EBEBEB;
+}
+
+.content-table tr:nth-child(odd) {
+    background-color: #ffffff;
+}
+
+
+.content-header {
+    margin: 3.75pt 0;
+    /* Converted from 5px */
+    position: absolute;
+    width: 10mm;
+    top: 10mm;
+    left: -20mm;
+}
+.customer-details{
+   position: absolute;
+   top: 148mm;
+   left: 13mm;
+}
+.customer-header{
+    font-weight: bold;
+    font-size: 5mm;
+}
+.right-align {
+    text-align: right;
+    position: absolute;
+}
+
+.total-amount {
+    top: 148mm;
+    position: absolute;
+    left: 127mm;
+    width: 52mm;
+    background-color: gainsboro;
+    font-weight: bold;
+    font-size: 4mm;
+}
+.total-footer{
+    background: #070789;
+    text-align: justify;
+    color: white;
+}
+
+.invoice-footer {
+    top: 227mm;
+    left: 127mm;
+    position: absolute;
+    width:50mm;
+    border-bottom: 2pt solid black;
+    height: 9mm;
+    text-align: center;
+}
+
+.terms {
+    top: 227mm;
+    left: 13mm;
+    position: absolute;
+    z-index: 4;
+    color: rgb(0, 0, 0);
+    width: 111mm;
+}
+.terms-header{
+    font-weight: bold;
+    font-size: 5mm;
+
+}
+
+.bank-details {
+    top: 183mm;
+    left: 13mm;
+    position: absolute;
+    width: 67mm;
+
+}
+.bank-header{
+    font-weight: bold;
+    font-size: 5mm;
+}
+
+.billing-address-section .details-header {
+    position: absolute;
+    color: black;
+    left: 0mm;
+    top: 147mm;
+    font-weight: bold;
+
+}
+
+.party-billing-address {
+    position: absolute;
+    color: black;
+    left: 0mm;
+    top: 153mm;
+}
+
+.shipping-address-section .details-header {
+    position: absolute;
+    color: black;
+    left: 116mm;
+    top: 147mm;
+    font-weight: bold;
+
+}
+
+.party-shipping-address {
+    position: absolute;
+    color: black;
+    left: 116mm;
+    top: 154mm;
+}
+
+.qr {
+    width: 25mm;
+    height: 25mm;
+    position: absolute;
+    top: 225mm;
+    left: 146mm;
+}
+
+
+/* Form Style */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    width: 300px;
+}
+
+label {
+    font-weight: bold;
+}
+
+input {
+    padding: 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+button {
+    padding: 0.5rem;
+    border: none;
+    background-color: #007bff;
+    color: white;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
