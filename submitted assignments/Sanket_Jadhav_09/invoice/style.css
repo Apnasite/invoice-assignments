@@ -1,0 +1,172 @@
+.invoice-wrapper {
+    width: 493.5pt; /* Converted from 658px */
+    padding: 15pt; /* Converted from 20px */
+    font-family: Arial, sans-serif;
+    color: #333;
+    border: 0.75pt solid black; 
+    position: relative;
+    overflow: hidden;
+    height: 256mm;
+}
+
+.invoice-background {
+    position: relative;
+}
+
+.rect-top-1 {
+    height: 200mm;
+    width: 217mm;
+    background-color: rgb(253, 164, 0);
+    border-radius: 50%;
+    position: absolute;
+    top: -147mm;
+    left: -29mm;
+    z-index: -2;
+}
+
+.rect-top-3 {
+    height: 200mm;
+    width: 200mm;
+    background-color: rgb(14, 16, 40);
+    border-radius: 50%;
+    position: absolute;
+    top: -154mm;
+    left: -32mm;
+}
+
+.rect-bottom-1 {
+    height: 50mm;
+    width: 50mm;
+    background-color: rgb(14, 16, 40);
+    
+    position: absolute;
+    top: 230mm;
+    left: -26mm;
+}
+
+.rect-bottom-2 {
+    height: 80mm;
+    width: 80mm;
+    background-color: rgb(253, 253, 253);
+    border-radius: 50%;
+    position: absolute;
+    top: 183mm;
+    left: -6mm;
+}
+
+.invoice-content {
+    margin-top: 15pt; /* Converted from 20px */
+    position: relative;  
+    bottom: -7mm;
+
+}
+
+.invoice-title {
+    text-align: center;
+    font-size: 33pt;
+    font-weight: bold;
+    z-index: 2;
+    top: -12mm;
+    left: -52mm;
+    color: white;
+    position: relative;
+}
+
+.invoice-header {
+    display: flex;
+    justify-content: space-between;
+}
+
+.invoice-header .invoice-header-logo {
+    width: 20%;
+    left: 139mm;
+    top: 2mm;
+    height: 29mm;
+    position: relative;
+    /* border: 1mm solid black; */
+  }
+
+.invoice-details{
+    margin: 3.75pt 0; /* Converted from 5px */
+    position: relative;
+    width: -1mm;
+    top: 30mm;
+    left: 52mm;
+
+}
+.details-header {
+    margin: 3.75pt 0; /* Converted from 5px */
+    position: relative;
+    width: 10mm;
+    top: 10mm;
+    left: -20mm; 
+}
+
+.org-address{
+    margin: 3.75pt 0; /* Converted from 5px */
+    position: relative;
+    width: 10mm;
+    top: 2mm;
+    left: -164mm;  
+}
+
+.content-table {
+    width: 100%;
+    border-collapse: collapse;
+    position: relative;
+    top: 2mm;
+}
+
+.content-table th {
+    border: 0.75pt solid #ddd; /* Converted from 1px */
+    padding: 6pt; /* Converted from 8px */
+    position: relative;
+    background-color: rgb(253, 164, 0);
+}
+.content-table td{
+    border: 0.75pt solid #ddd; /* Converted from 1px */
+    padding: 6pt; /* Converted from 8px */
+    position: relative;
+}
+
+.content-header {
+    margin: 3.75pt 0; /* Converted from 5px */
+    position: relative;
+    width: 10mm;
+    top: 10mm;
+    left: -20mm; 
+}
+
+.right-align {
+    text-align: right;
+    position: relative;
+}
+
+.total-amount {
+    margin-top: 15pt; /* Converted from 20px */
+    position: relative;
+}
+.invoice-footer{
+    margin-top: 15pt; /* Converted from 20px */
+    position: relative;
+    left: 83mm;  
+}
+.terms{
+    margin-top: 15pt; /* Converted from 20px */  
+    position: relative;  
+    z-index: 4;
+}
+.bank-details{
+    margin-top: 15pt; /* Converted from 20px */
+    position: relative;  
+  
+}
+
+.details-header {
+    font-weight: bold;
+    margin-top: 7.5pt; 
+    position: relative;  
+    left: 0mm;
+    top: 1mm;
+
+}
