@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Invoice</title>
+    <link rel="stylesheet" href="/css/styles.css">
+</head>
+<body>
+    <div class="invoice-box">
+        <header class="invoice-header">
+            <div class="brand">
+                <h1>Meta Platforms, Inc.</h1>
+                <p>Meta, metamates, me.</p>
+            </div>
+            <div class="invoice-title">
+                <h2>INVOICE</h2>
+            </div>
+        </header>
+        
+        <section class="invoice-details">
+            <div class="client-info">
+                <p><strong>Invoice to:</strong> Mark Zuckerberg (Meta Inc.)</p>
+                <p>Menlo Park, California,</p>
+                <p>United States</p>
+            </div>
+            <div class="invoice-info">
+                <p><b>Invoice#:</b> 52148</p>
+                <p><b>Date:</b> 10/07/2024</p>
+            </div>
+        </section>
+        
+        <table class="invoice-table">
+            <thead>
+                <tr>
+                    <th>SL.</th>
+                    <th>Item Description</th>
+                    <th>Price</th>
+                    <th>Qty</th>
+                    <th>Total</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td>AI video generator</td>
+                    <td class="price">Rs.50.00</td>
+                    <td class="qty">1</td>
+                    <td class="total">Rs.50.00</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>VR Headsets</td>
+                    <td class="price">Rs.20.00</td>
+                    <td class="qty">3</td>
+                    <td class="total">Rs.60.00</td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>3d Screen</td>
+                    <td class="price">Rs.100.00</td>
+                    <td class="qty">2</td>
+                    <td class="total">Rs.200.00</td>
+                </tr>
+                <tr>
+                    <td>4</td>
+                    <td>Smart Glasses</td>
+                    <td class="price">Rs.190.00</td>
+                    <td class="qty">2</td>
+                    <td class="total">Rs380.00</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <section class="total-section">
+            <p>Sub Total: <span class="subtotal">Rs.220.00</span></p>
+            <p>Tax: <span class="tax">0.00%</span></p>
+            <p><strong>Total: <span class="grand-total">Rs.220.00</span></strong></p>
+        </section>
+
+        <section class="footer">
+            <p><b>Thank you for your business</b></p>
+            <div class="payment-info">
+                <p><strong>Payment Info:</strong></p>
+                <p><b>Account Name:</b> Meta Inc.</p>
+                <p><b>Bank:</b> City Bank</p>
+                <p><b>IBAN:</b> 1234 5678 9012</p>
+            </div>
+            <div class="terms">
+                <p><b>Terms & Conditions:</b> Meta and its Affiliates are not a party to <br>
+                    Transactions or disputes between you and your customers</p>
+            </div>
+            <div class="signature">
+                <p><b>Authorised Sign</b></p>
+            </div>
+        </section>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
