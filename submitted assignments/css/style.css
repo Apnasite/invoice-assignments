@@ -1,0 +1,241 @@
+.invoice-wrapper{
+  position: absolute;
+  top: 30mm;
+  left: 40mm;
+  width: 210mm;
+  height: 297mm;
+  padding: 100mm;
+  background-color: white;
+  border: 1mm solid gray;
+  /* justify-content: center; */
+  display: flex;
+  overflow: hidden;
+}
+
+.invoice-background{
+
+}
+
+.rect-top-4{
+  position: absolute;
+  top: -37mm;
+  left: 62mm;
+  transform: skewY(-33deg);
+  border-bottom-right-radius: 75mm;
+  border-bottom-left-radius: 35mm;
+  width: 123mm;
+  height: 106mm;
+  background-color: rgb(243, 247, 9);
+}
+
+.rect-top-1{
+  position: absolute;
+  top: -9mm;
+  left: 48mm;
+  /* transform: skewY(-33deg); */
+  border-bottom-right-radius: 80mm;
+  border-bottom-left-radius: -6mm;
+  width: 123mm;
+  height: 106mm;
+  background-color: rgb(228, 228, 221);
+}
+
+.rect-top-2{
+  position: absolute;
+  top: 0mm;
+  left: 0mm;
+  width: 412mm;
+  height: 25mm;
+  background-color: rgb(243, 247, 9);
+}
+
+.rect-top-3{
+  position: absolute;
+  top: -9mm;
+  left: -16mm;
+  transform: skewY(0deg);
+  border-bottom-right-radius: 64mm;
+  border-bottom-left-radius: 15mm;
+  width: 144mm;
+  height: 106mm;
+  background-color: rgb(243, 247, 9);
+}
+
+.rect-top-5{
+  position: absolute;
+  top: 223mm;
+  left: 5mm;
+  width: 397mm;
+  height: 20mm;
+  border-radius: 20mm;
+  background-color: rgb(42, 9, 103);
+}
+
+.rect-bottom-4{
+  position: absolute;
+  top: 430mm;
+  left: 221mm;
+  transform: skewY(-33deg);
+  border-top-right-radius: 35mm;
+  border-top-left-radius: 75mm;
+  width: 123mm;
+  height: 106mm;
+  background-color: rgb(243, 247, 9);; 
+}
+
+.rect-bottom-1{
+  position: absolute;
+  top: 404mm;
+  left: 235mm;
+  /* transform: skewY(-33deg); */
+  border-top-right-radius: -6mm;
+  border-top-left-radius: 80mm;
+  width: 123mm;
+  height: 106mm;
+  background-color: rgb(228, 228, 221);
+}
+
+.rect-bottom-2{
+  position: absolute;
+  top: 464mm;
+  left: 0mm;
+  width: 412mm;
+  height: 36mm;
+  background-color: rgb(243, 247, 9);
+}
+
+.rect-bottom-3{
+  position: absolute;
+  top: 404mm;
+  left: 282mm;
+  transform: skewX(-1deg);
+  border-top-right-radius: 15mm;
+  border-top-left-radius: 64mm;
+  width: 144mm;
+  height: 106mm;
+  background-color: rgb(243, 247, 9);
+}
+
+.invoice-header-logo{
+  position: absolute;
+  top: 16mm;
+  left: 20mm;
+  width: 66mm;
+}
+.invoice-title{
+  position: absolute;
+  top: -11mm;
+  left: 178mm;
+  font-size: 4.6em;
+  color: #29024d;  
+}
+
+.invoice-details{
+  position: absolute;
+  top: 32mm;
+  left: 310mm;
+  font-size: 2em;
+}
+
+.org-address{
+    position: absolute;
+    top: 122mm;
+    left: 166mm;
+    font-size: 1.4em;
+    padding: 10px;
+    margin: 5px 0;
+    border-radius: 4px;
+}
+
+.billing-address-section{
+  position: absolute;
+  top: 101mm;
+  left: 19mm;
+  font-size: 1.3em;
+}
+
+.billing-address-section .details-header{
+  font-size: 1.3em;
+  line-height: 14.3mm;
+}
+
+.shipping-address-section{
+  position: absolute;
+  top: 94mm;
+  left: 308mm;
+  font-size: 1.3em;
+}
+
+.shipping-address-section .details-header{
+  line-height: 20mm;
+  font-size: 1.3em;
+}
+
+.content-table{
+  position: absolute;
+  top: 218mm;
+  left: 6mm;
+  width: 395mm;
+  height: 121mm;
+  text-align: left;
+  padding-top: 6mm;
+  padding-bottom: 0mm;
+  padding-left: 15mm;
+  font-size: 1.4em;
+  box-shadow: 0 25px 50px -12px rgba(0,0,0,0.25);;
+}
+
+.content-table thead{
+  color: white;
+  line-height: 19mm;
+  font-size: 1.4em;
+}
+
+.content-table tbody{
+  color: black;
+  line-height: 27mm;
+  font-size: 1.2em;
+}
+
+.total-amount{
+  position: absolute;
+  top: 370mm;
+  left: 18mm;
+  font-size: 1.9em;
+  font-weight: bold;
+}
+
+.bank-details{
+  position: absolute;
+  top: 395mm;
+  left: 115mm;
+  line-height: 16.3mm;
+  font-size: 2.3em;
+}
+
+.terms{
+  position: absolute;
+  top: 467mm;
+  left: 5mm;
+  font-size: 1.6em;
+}
+
+.terms .details-header{
+  font-size: 1.1em;
+  line-height: 11mm;
+}
+
+.invoice-footer{
+  position: absolute;
+  top: 414mm;
+  left: 277mm;
+  font-size: 2.5em;
+  text-align: center;
+  line-height: 20mm;
+}
+
+.invoice-footer img{
+  position: absolute;
+  top: -14mm;
+  right: 337mm;
+}
