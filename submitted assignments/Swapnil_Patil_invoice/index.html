@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Invoice</title>
+</head>
+
+<body>
+    
+        <invoice-component 
+        config='{
+            "containerClass": "invoice-container",
+        "headerClass": "invoice-header",
+        "logoClass": "invoice-logo",
+        "titleClass": "invoice-title",
+        "dateClass" : "date-title",
+        "detailsClass": "invoice-details",
+        "sellerInfoClass": "seller-info",
+        "clientInfoClass": "client-info",
+        "itemsClass": "invoice-items",
+        "tableClass": "invoice-table",
+        "totalSectionClass": "total-section",
+        "footerClass": "invoice-footer",
+        "amountInWordsClass": "amount-in-words",
+        "footerTextClass": "invoice-footer-text"
+        }'
+          
+            data='{
+                "logo": "./invoice-logo-2.png",
+                "logoAlt": "Invoice Logo",
+                "party": {
+                    "name": "Swapnil Patil",
+                    "mobile": "+919999999999",
+                    "email": "swapnil0123@gmail.com",
+                    "address": {
+                        "location": "Rahatani",
+                        "city": "Pune",
+                        "state": "Maharashtra",
+                        "country": "India",
+                        "pincode": "411017"
+                    }
+                },
+                "company": {
+                    "name": "Kalpesh Shewale",
+                    "mobile": "+918669368242",
+                    "email": "kshewale2001@gmail.com",
+                    "address": {
+                        "city": "Adilabad",
+                        "state": "Andhra Pradesh",
+                        "country": "India",
+                        "pincode": "504306"
+                    }
+                },
+                "invoiceNumber": "IN00000659",
+                "invoiceDate": "Sep 4, 2024",
+                "items": [
+                    { 
+                        "SL": "1", 
+                        "Description":"Product 1 ", 
+                        "SQ": 5, 
+                        "Total": 260 
+                    
+                    },
+                    { 
+                        "SL": "2", 
+                        "Description": "Product 2 ", 
+                        "SQ": 3, 
+                        "Total": 300 
+                        
+                        
+                    },
+                    { 
+                        "SL": "3", 
+                        "Description": "Service", 
+                        "SQ": 1, 
+                        "Total": 400
+                      
+                    },
+
+                    { 
+                        "SL": "4", 
+                        "Description": "Self-Service", 
+                        "SQ": 3, 
+                        "Total": 50
+                      
+                    },
+
+                    { 
+                        "SL": "5", 
+                        "Description": "Business", 
+                        "SQ": 5, 
+                        "Total": 200
+                      
+                    },
+
+                    { 
+                        "SL": "6", 
+                        "Description": "Employe-Work", 
+                        "SQ": 4, 
+                        "Total": 150
+                      
+                    }
+
+                    
+
+                ],
+                "subTotal": 1360,
+                "discount": 10,
+                "taxableAmount": 340,
+                "sgstTotal": 22.5,
+                "cgstTotal": 22.5,
+                "amount": 385,
+                "totalAmount": 1685,
+                "amountInWords": "One Thousand Six Hundred Eighty-Five",
+                "bankDetails": {
+                    "bank": "Yes Bank",
+                    "account": "12345678901234",
+                    "ifsc": "YESB0BNA567",
+                    "branch": "Pune Branch"
+                },
+                "terms": [
+                    "Goods once sold cannot be returned.",
+                    "Payment should be made within 15 days."
+                ]
+            }'>
+        </invoice-component>
+  
+</body>
+<script src="./script.js"></script>
+
+</html>
